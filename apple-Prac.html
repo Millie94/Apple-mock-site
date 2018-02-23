@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Apple</title>
+    <style media="screen">
+      body{
+        max-width: 100%;
+        min-width: 75%;
+        background-color: #e0e0e0;
+      }
+      .container{
+        max-width: 990px;
+      }
+      .header{
+        background-color: black;
+        height: 65px;
+        max-width: 100%;
+        color: white;
+        font-family: myriad pro;
+        cursor: pointer;
+      }
+      td.header{
+        padding-right: 3px;
+      }
+      td li{
+        list-style-type: none;
+        padding-bottom: 1%;
+        padding-right: 10%;
+        font-size: 12px;
+        font-weight: lighter;
+        cursor: pointer;
+      }
+      table .pr-Show .footer .header{
+        max-width: 100%;
+        min-width: 50%;
+      }
+      img{
+        width: 242px;
+      }
+      .slideshow{
+        height: 35%;
+        width: 100%;
+      }
+        #slides{
+          position: relative;
+          height: 400px;
+          padding: 0px;
+          margin: 0px;
+          list-style-type: none;
+        }
+        .slide{
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          z-index: 1;
+          max-width: 100%;
+          max-height: 100%;
+
+          -webkit-transition: opacity 1s;
+          -moz-transition: opacity 1s;
+          -o-transition: opacity 1s;
+          transition: opacity 1s;
+        }
+        .showing{
+          opacity: 1;
+          z-index: 2;
+        }
+    .slide:nth-of-type(1) {
+        background: url("iphone-7.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .slide:nth-of-type(2) {
+        background: url("Apple_Watch_2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .slide:nth-of-type(3) {
+      background: url("apple-macbook-pro.jpg");
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+    </style>
+  </head>
+  <body>
+  <center>
+    <div class="container" align="center">
+      <div class="header" align="center" style="max-width: 100%; min-width: 50%;">
+        <table>
+          <tr>
+            <td><img src="" alt=""></td>
+            <td>Mac</td>
+            <td>iPhone</td>
+            <td>iPhone</td>
+            <td>Watch</td>
+            <td>Tv</td>
+            <td>Music</td>
+            <td>Support</td>
+            <td><img src="" alt=""></td>
+            <td><img src="" alt=""></td>
+          </tr>
+        </table>
+    </div>
+
+        <!--iphone-7.jpg-->
+        <!--Apple_Watch_2.jpg-->
+        <!--apple-macbook-pro.jpg-->
+        <div class="slideshow">
+          <ul id="slides">
+            <li class="slide showing"></li>
+            <li class="slide"></li>
+            <li class="slide"></li>
+          </ul>
+        </div>
+
+      <div class="pr-Show">
+      <!--use of tables to align products, w/ white border-->
+        <table align="center" style="max-width: 100%; min-width: 50%;">
+          <tr>
+            <td><img src="apple-acess.jpg" alt="" height="140px" style="max-width: 100%; min-width: 50%;"></td>
+            <td><img src="ipads.jpg" alt="ipads" height="140px" style="max-width: 100%; min-width: 50%;"></td>
+            <td><img src="airpods.png" alt="" height="140px" style="max-width: 100%; min-width: 50%;"></td>
+            <td><img src="apple-tv.jpg" alt="" height="140px" style="max-width: 100%; min-width: 50%;"></td>
+          </tr>
+        </table>
+      </div>
+
+      <span class="footer">
+        <table align="center">
+          <tr>
+          <td>
+              <li><b>Shop and Learn</b></li>
+              <li>Mac</li>
+              <li>iPad</li>
+              <li>iPhone</li>
+              <li>Watch</li>
+              <li>Tv</li>
+              <li>Music</li>
+              <li>iTunes</li>
+              <li>iPod</li>
+              <li>Accessories</li>
+              <li>Gift Cards</li>
+          </td>
+
+          <td>
+            <li><b>Apple Store</b></li>
+            <li>Find a Store</li>
+            <li>Genius Bar</li>
+            <li>Workshops and Learning</li>
+            <li>Youth Programs</li>
+            <li>Apple Store App</li>
+            <li>Refurbished and Clearance</li>
+            <li>Financing</li>
+            <li>Reuse and Recycling</li>
+            <li>Order Status</li>
+            <li>Shopping Help</li>
+          </td>
+
+          <td>
+            <li><b>For Education</b></li>
+            <li>Apple and Education</li>
+            <li>Shop for College</li><br>
+
+            <li><b>For Business</b></li>
+            <li>Apple and Business</li>
+            <li>Shop for Business</li>
+          </td>
+
+          <td>
+            <li><b>Account</b></li>
+            <li>Manage Your Apple Id</li>
+            <li>Apple Store Account</li>
+            <li>iCloud.com</li><br>
+
+            <li><b>Apple Values</b></li>
+            <li>Accessibility</li>
+            <li>Education</li>
+            <li>Environment</li>
+            <li>Inclusive and Diversity</li>
+            <li>Privacy</li>
+            <li>Supplier Responsibility</li>
+          </td>
+
+          <td>
+            <li><b>About Apple</b></li>
+            <li>Apple Info</li>
+            <li>Newsroom</li>
+            <li>Job Opportunities</li>
+            <li>Press Info</li>
+            <li>Investors</li>
+            <li>Events</li>
+            <li>Contact Apple</li>
+          </td>
+        </tr>
+        </table><br><hr width="75%">
+        <table align="center" style="font-size: 12px;">
+          <tr>
+            <td>Copyright © 2016 Apple Inc. All rights reserved</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Privacy Policy |</td>
+            <td>Terms of Use |</td>
+            <td>Sales and Refunds |</td>
+            <td>Legal |</td>
+            <td>Site Map</td>
+          </tr>
+        </table>
+
+      </span>
+    </div>
+  </center>
+
+  <script type="text/javascript">
+    var slides = document.querySelectorAll('#slides .slide');
+    var currentSlide = 0;
+    var slideInterval = setInterval(nextSlide,3000);
+
+    function nextSlide() {
+      slides[currentSlide].className = 'slide';
+      currentSlide = (currentSlide+1)%slides.length;
+      slides[currentSlide].className = 'slide showing';
+    }
+  </script>
+
+  </body>
+</html>
